@@ -11,8 +11,6 @@ section.hero {
     max-width: 40rem;
   }
 
-
-
   & h1 div {
     display: inline-block;
     overflow: hidden;
@@ -35,7 +33,7 @@ section.hero {
 
   & h1 span {
     display: block;
-    animation: slideup 5s infinite ease;
+    animation: slideup 5s 2s infinite ease;
   }
 
   /*buttons*/
@@ -81,7 +79,6 @@ section.hero {
     width: 100%;
     max-width: 30.5rem;
     height: 30.5rem;
-   
 
     & .content {
       width: 100%;
@@ -111,7 +108,9 @@ section.hero {
       z-index: 0;
       opacity: 0;
       transform: translateX(400%);
-      animation: slideIn 2s 800ms ease both, apper 100ms 800ms both ;
+      animation:
+        slideIn 2s 800ms ease both,
+        apper 100ms 800ms both;
     }
 
     & img[src*="stars-2"] {
@@ -124,12 +123,12 @@ section.hero {
   }
 }
 /*!Responsividade*/
-@media(max-width: 650px){
-  .hero{
+@media (max-width: 650px) {
+  .hero {
     display: flex;
     flex-direction: column-reverse;
   }
-  img{
+  img {
     max-width: 80%;
   }
   & .buttons {
@@ -139,17 +138,17 @@ section.hero {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-   
   }
+  &.content {
+    position: relative;
+  }
+ 
 }
-
 
 @keyframes slideIn {
-
-50%{
-  transform: translateX(-20px);
-}
-
+  50% {
+    transform: translateX(-20px);
+  }
 
   100% {
     transform: translateX(0);
