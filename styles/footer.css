@@ -93,3 +93,12 @@ scale: 1;
 
 
 }
+
+@media (max-width: 650px) {
+  & footer{
+display: flex;
+flex-flow: row wrap;
+gap: 2rem;
+margin-left: auto;
+  }
+}

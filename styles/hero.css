@@ -122,28 +122,6 @@ section.hero {
     }
   }
 }
-/*!Responsividade*/
-@media (max-width: 650px) {
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  img {
-    max-width: 80%;
-  }
-  & .buttons {
-    display: flex;
-    flex-direction: column-reverse;
-    max-width: 100%;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  &.content {
-    position: relative;
-  }
- 
-}
 
 @keyframes slideIn {
   50% {
@@ -226,4 +204,24 @@ section.hero {
   100% {
     transform: translateY(-15rem);
   }
+}
+/*!Responsividade*/
+@media (max-width: 650px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  img {
+    max-width: 80%;
+  }
+  & .buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+ 
 }
