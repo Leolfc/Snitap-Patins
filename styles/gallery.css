@@ -5,6 +5,7 @@ section.gallery {
   margin-inline: auto;
 
   & header {
+   display: flex;
     text-align: center;
   }
 
