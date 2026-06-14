@@ -102,9 +102,9 @@ section.gallery {
 flex-direction: column;
     gap: 1rem;
 
-   & h2{
-margin-top: 10px;
-}
+   & span{
+line-height: 1.5;
+
   }
 
   & section.gallery .content {
