@@ -28,17 +28,14 @@
 html,
 button {
   font: 500 1rem 1/5 var(-ff-base);
-  
 }
- /* html{
+/* html{
   zoom: .5;
 } */
 
-button
-h1,
+button h1,
 h2 {
   font: "Syne", sans-serif;
-  
 }
 
 h1 {
@@ -51,4 +48,7 @@ h2 {
   font-size: var(--text-lg);
   font-size: 2.5rem;
   line-height: 1.2rem;
+}
+a {
+  color: black;
 }
