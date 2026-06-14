@@ -5,8 +5,10 @@ section.gallery {
   margin-inline: auto;
 
   & header {
-   display: flex;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   & header span {
@@ -97,26 +99,20 @@ section.gallery {
 }
 
 @media (max-width: 650px) {
-  & .top-gallery {
-    display: flex;
-flex-direction: column;
-    gap: 1rem;
-
-   & span{
-line-height: 1.5;
-
-  }
-
-  & section.gallery .content {
+ & .top-gallery {
     display: flex;
     flex-direction: column;
-   
-    
-  & figure img:nth-child(1){
-    max-width: 100%;
-    
-  }
+    gap: 1rem;
+    border-radius: 2px solid red;
 
-    
+    & .gallery.content {
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px solid red;
+
+      & figure img:nth-child(1) {
+        max-width: 100%;
+      }
+    }
   }
 }
