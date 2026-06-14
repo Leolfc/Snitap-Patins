@@ -101,6 +101,10 @@ section.gallery {
     display: flex;
 flex-direction: column;
     gap: 1rem;
+
+   & h2{
+margin-top: 10px;
+}
   }
 
   & section.gallery .content {
